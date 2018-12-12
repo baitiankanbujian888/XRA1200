@@ -23,7 +23,7 @@ namespace XRA1200 {
         let InputFallingEdgeInterruptEnable = 9,
         let InputFilterEnable = 10,
 
-    //% blockId="XRA1200_SetDirection" block="设置方向"
+    //% blockId="XRA1200_SetDirection" block="设置方向 %d"
     //% weight=60 blockGap=8
     export function SetDirection(inputBitMasks: number): void {
         let buf = pins.createBuffer(2);
@@ -50,7 +50,7 @@ namespace XRA1200 {
         return pins.i2cReadNumber(XRA1200_I2C_ADDR, NumberFormat.UInt8BE);
     }
 
-    //% blockId="XRA1200_SetPullup" block="设置上拉"
+    //% blockId="XRA1200_SetPullup" block="设置上拉 %d"
     //% weight=60 blockGap=8
     export function SetPullup(bitMasks: number): void {
         let buf = pins.createBuffer(2);
@@ -67,7 +67,7 @@ namespace XRA1200 {
         return pins.i2cReadNumber(XRA1200_I2C_ADDR, NumberFormat.Int8LE);
     }
 
-    //% blockId="XRA1200_SetData" block="写入数据"
+    //% blockId="XRA1200_SetData" block="写入数据 %d"
     //% weight=60 blockGap=8
     export function SetData(data: number): void {
         let buf = pins.createBuffer(2);
