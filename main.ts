@@ -23,12 +23,12 @@ namespace XRA1200 {
         let InputFallingEdgeInterruptEnable = 9,
         let InputFilterEnable = 10,
 
-    //% blockId="XRA1200_SetDirection" block="设置方向 %inputBitMasks"
+    //% blockId="XRA1200_SetDirection" block="设置方向"
     //% weight=60 blockGap=8
-    export function SetDirection(inputBitMasks: number): void {
+    export function SetOutput(void): void {
         let buf = pins.createBuffer(2);
         buf[0] = GPIOConfiguration;
-        buf[1] = inputBitMasks;
+        buf[1] = 0xff;
         pins.i2cWriteBuffer(XRA1200_I2C_ADDR, buf);
 
         buf[0] = InputRisingEdgeInterruptEnable;
