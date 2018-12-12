@@ -23,7 +23,7 @@ namespace XRA1200 {
         let InputFallingEdgeInterruptEnable = 9,
         let InputFilterEnable = 10,
 
-    //% blockId="XRA1200_SetDirection" block="设置方向 %d"
+    //% blockId="XRA1200_SetDirection" block="设置方向 %inputBitMasks"
     //% weight=60 blockGap=8
     export function SetDirection(inputBitMasks: number): void {
         let buf = pins.createBuffer(2);
@@ -85,29 +85,5 @@ namespace XRA1200 {
 
     }
 
-    /**
-     * get pressure
-     */
-    //% blockId="XRA1200_GET_PRESSURE" block="get pressure"
-    //% weight=80 blockGap=8
-
-
-    /**
-     * get temperature
-     */
-    //% blockId="XRA1200_GET_TEMPERATURE" block="get temperature"
-    //% weight=80 blockGap=8
-
-    /**
-     * power on
-     */
-    //% blockId="XRA1200_POWER_ON" block="Power On"
-    //% weight=61 blockGap=8
-
-    /**
-     * power off
-     */
-    //% blockId="XRA1200_POWER_OFF" block="Power Off"
-    //% weight=60 blockGap=8
 
 }
