@@ -1,7 +1,7 @@
 {
-    "name": "BMP280",
-    "version": "1.1.0",
-    "description": "makecode BMP280 Digital Pressure Sensor Package for micro:bit",
+    "name": "XRA1200",
+    "version": "",
+    "description": "",
     "license": "MIT",
     "dependencies": {
         "core": "*"
